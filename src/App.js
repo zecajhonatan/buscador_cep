@@ -20,7 +20,7 @@ function App() {
     try {
       const response = await api.get(`${input}/json`)
       setCep(response.data)
-      toast.success("CEP Encontrado", {
+      toast.success("CEP Encontrado!", {
         position: "top-right",
         autoClose: 500,
       })
